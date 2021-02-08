@@ -15,16 +15,10 @@ const fs = require("fs");
 inquirer.prompt(questions)
 .then(answers => {
     // console.log(answers);
-    // console.log(generator(answers));
-    fs.writeFile("./test/README.md", generator(answers), function (err) {
+    console.log(generator(answers));
+    fs.writeFile("README.md", generator(answers), function (err) {
         if (err) throw err;
         console.log('Saved!');
     });
 })
-.catch(error => {
-    if(error.isTtyError) {
-    // Prompt couldn't be rendered in the current environment
-    } else {
-    // Something else when wrong
-    }
-});
+.catch(error => console.log(error));
