@@ -17,7 +17,7 @@ First, install Node.js 14 or newer on your system. Then install the inquirer pac
 
 ## Usage
 
-From command line nun the generator using the following command:
+From command line run the generator using the following command:
 
 ```
 node index.js
