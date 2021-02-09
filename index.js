@@ -5,12 +5,12 @@ const fs = require("fs");
 
 // 1) Project Title
 // 2) Description
-// 3) Installation Instructions
+// 3) Installation
 // 4) Usage
-// 5) Contributors
-// 6) Tests
-// 7) License
-// 1) Questions
+// 5) Constributing
+// 6) Testing
+// 7) Questions
+// 8) License
 
 inquirer.prompt(questions)
 .then(answers => {
